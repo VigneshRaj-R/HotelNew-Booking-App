@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotelnew/model/home/all_rooms.dart';
 import 'package:hotelnew/utils/sizes.dart';
-import 'package:hotelnew/view/screens/home/widgets/search.dart';
+import 'package:hotelnew/view/screens/search/widgets/search_field.dart';
 import 'package:hotelnew/view/widgets/main_card.dart';
 import 'package:hotelnew/view/widgets/title_widget.dart';
 import 'package:hotelnew/view_model/home/home_view_model.dart';

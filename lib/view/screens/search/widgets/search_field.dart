@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hotelnew/view_model/home/home_view_model.dart';
 import 'package:hotelnew/view_model/search/search_viewmodel.dart';
@@ -21,7 +20,7 @@ class SearchField extends StatelessWidget {
           prefixIcon: Padding(
             padding: const EdgeInsets.only(left: 20, right: 10),
             child: Icon(
-              CupertinoIcons.search,
+              Icons.search,
               color: Colors.grey.shade800,
             ),
           ),
