@@ -1,0 +1,27 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:hotelnew/utils/colors.dart';
+import 'package:hotelnew/view_model/splash/splash_view_model.dart';
+import 'package:provider/provider.dart';
+
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final splashController = context.read<SplashViewModel>();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Timer(const Duration(seconds: 2), () {
+        splashController.checkLogin();
+      });
+    });
+    return Scaffold(
+      backgroundColor: KColors.kThemeGreen,
+      body: Center(
+          child: Image.asset(
+        'assets/images/logo.png',
+        height: 200,
+      )),
+    );
+  }
+}
